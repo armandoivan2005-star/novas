@@ -1,0 +1,152 @@
+/*--------------------------------------------------------------
+    Loader
+--------------------------------------------------------------*/
+
+    .pre-loader {
+        height: 100%;
+        left: 0;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 999991;
+        background-color: #fff;
+    }
+
+    .loader-inner {
+        padding: 25px;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        text-align: center;
+        width: 100%;
+        -webkit-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+    }
+
+   /*Loader styles & Animation*/
+
+.loader-icon{
+    font-size:clamp(5rem, 3.6067rem + 6.3694vw, 11.25rem); /*80-180px*/
+}
+
+.loader-icon svg{
+    overflow: visible;
+}
+
+.wdt-cus-loader .wdt-cus-load-outer,
+.wdt-cus-loader .wdt-cus-load-inner{
+    color: var(--wdtPrimaryColor);
+}
+
+.wdt-cus-loader { 
+    -webkit-animation: rotate 5s linear infinite;
+    animation: rotate 5s linear infinite;
+    transform-origin:center;
+}
+
+@keyframes rotate {
+    0% { -webkit-transform:rotate(0deg); transform:rotate(0deg); }
+    100% { -webkit-transform:rotate(360deg); transform:rotate(360deg); }
+}
+
+.wdt-loader-dot.dot1 { 
+    animation: travel 1s ease infinite;
+}
+
+@keyframes travel {
+    0% { -webkit-transform:translate(0px, 0px); transform:translate(0px, 0px); }
+    50% { -webkit-transform:translate(0px, 15px); transform:translate(0px, 15px); color:var(--wdtHeadAltColor); }
+}
+
+.wdt-loader-dot.dot2 {
+    animation: travel2 1s ease infinite;
+    
+}
+@keyframes travel2 {
+    0% { -webkit-transform:translate(0px, 0px); transform:translate(0px, 0px); }
+    50% { -webkit-transform:translate(11px, 11px); transform:translate(11px, 11px); color:var(--wdtHeadAltColor); }
+}
+
+.wdt-loader-dot.dot3 {
+    animation: travel3 1s ease infinite;
+    
+}
+
+@keyframes travel3 {
+    0% { -webkit-transform:translate(0px, 0px); transform:translate(0px, 0px); }
+    50% { -webkit-transform:translate(15px,0px); transform:translate(15px,0px); color:var(--wdtHeadAltColor); }
+}
+
+.wdt-loader-dot.dot4 {
+   animation: travel4 1s ease infinite;
+}
+
+@keyframes travel4 {
+    0% { -webkit-transform:translate(0px, 0px); transform:translate(0px, 0px); }
+    50% { -webkit-transform:translate(11px,-11px); transform:translate(11px,-11px); color:var(--wdtHeadAltColor); }
+}
+
+.wdt-loader-dot.dot5 {
+    animation: travel5 1s ease infinite;
+}
+
+@keyframes travel5 {
+    0% { -webkit-transform:translate(0px, 0px); transform:translate(0px, 0px); }
+    50% { -webkit-transform:translate(0px,-15px); transform:translate(0px,-15px); color:var(--wdtHeadAltColor); }
+}
+
+.wdt-loader-dot.dot6 {
+    animation: travel6 1s ease infinite;
+    
+}
+
+@keyframes travel6 {
+    0% { -webkit-transform:translate(0px, 0px); transform:translate(0px, 0px); }
+    50% { -webkit-transform:translate(-11px,11px); transform:translate(-11px,11px); color:var(--wdtHeadAltColor); }
+}
+
+.wdt-loader-dot.dot7 {
+    animation: travel7 1s ease infinite;
+}
+
+@keyframes travel7 {
+    0% { -webkit-transform:translate(0px, 0px); transform:translate(0px, 0px); }
+    50% { -webkit-transform:translate(-15px,0px); transform:translate(-15px,0px); color:var(--wdtHeadAltColor); }
+}
+
+.wdt-loader-dot.dot8 {
+    animation: travel8 1s ease infinite; 
+}
+
+@keyframes travel8 {
+    0% { -webkit-transform:translate(0px, 0px); transform:translate(0px, 0px); }
+    50% { -webkit-transform:translate(-11px,-11px); transform:translate(-11px,-11px); color:var(--wdtHeadAltColor); }
+}
+
+
+/*--------------------------------------------------------------
+    Accents
+--------------------------------------------------------------*/
+
+    .pre-loader { background-color: var(--wdtBodyBGColor); }
+    .loader-text { background-image: linear-gradient(to right, var(--wdtPrimaryColor) 10%, var(--wdtHeadAltColor) 50%, var(--wdtPrimaryColor) 60%); }
+
+
+/*--------------------------------------------------------------
+    Responsive
+--------------------------------------------------------------*/
+
+    /*----*****---- << Mobile (Landscape) >> ----*****----*/
+
+    /* Note: Design for a width of 480px */
+
+    @media only screen and (min-width: 480px) and (max-width: 767px) {
+
+    }
+
+
+    /* Common Styles for the devices below 479px width */
+
+    @media only screen and (max-width: 479px) {
+
+    }

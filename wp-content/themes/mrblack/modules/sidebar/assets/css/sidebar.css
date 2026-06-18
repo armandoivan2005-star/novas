@@ -1,0 +1,312 @@
+/*--------------------------------------------------------------
+	Sidebar Widget Area
+--------------------------------------------------------------*/
+
+#secondary.secondary-sidebar {
+  margin-bottom: 150px;
+  border: 1px solid var(--wdtPrimaryColor);
+  background: var(--wdtAccentTxtColor);
+}
+
+.secondary-sidebar .widget:last-child {
+  margin-bottom: 0px;
+}
+
+#secondary.secondary-sidebar:has(.theiaStickySidebar) {
+  border: 0;
+  background: none;
+}
+
+#secondary.secondary-sidebar .theiaStickySidebar {
+  border: 1px solid var(--wdtPrimaryColor);
+  background: var(--wdtAccentTxtColor);
+}
+
+.secondary-sidebar .widgettitle {
+  display: inline-block;
+  float: none;
+  margin-top: 0;
+  width: 100%;
+  text-transform: uppercase;
+}
+
+.secondary-sidebar .widgettitle:before,
+.secondary-sidebar .widgettitle:after {
+  content: "";
+}
+
+.secondary-sidebar .widgettitle:empty {
+  display: none;
+}
+
+.secondary-sidebar .widgettitle>a {
+  color: currentColor;
+}
+
+.secondary-sidebar>div[class^="type"] {
+  overflow: hidden;
+}
+
+
+/* Gallery Sidebar */
+#secondary.secondary-sidebar .gallery,
+#secondary.secondary-sidebar .gallery-item>div>a {
+  margin-bottom: 0;
+}
+
+#secondary.secondary-sidebar .gallery-item {
+  padding: 0;
+  overflow: hidden;
+}
+
+#secondary.secondary-sidebar .gallery-item img {
+  border: 0;
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+  -webkit-transition: var(--wdtAltTransition);
+  transition: var(--wdtBaseTransition);
+  backface-visibility: hidden;
+  isolation: isolate;
+}
+
+#secondary.secondary-sidebar .gallery-item:hover img {
+  border: 0;
+  -webkit-transform: scale(1.03);
+  transform: scale(1.03);
+}
+
+
+/*--------------------------------------------------------------
+	Colors
+--------------------------------------------------------------*/
+
+.secondary-sidebar .widgettitle,
+.secondary-sidebar .widget ul li>a,
+.secondary-sidebar .tagcloud a {
+  color: var(--wdtHeadAltColor);
+}
+
+.secondary-sidebar .widgettitle a {
+  color: inherit;
+}
+
+.secondary-sidebar .tagcloud a:hover {
+  color: var(--wdtAccentTxtColor);
+}
+
+#secondary.secondary-sidebar .tagcloud a {
+  color: var(--wdtAccentTxtColor);
+}
+
+#secondary.secondary-sidebar .widget.widget_tag_cloud a:hover {
+  color: var(--wdtHeadAltColor) !important;
+}
+
+
+/*--------------------------------------------------------------
+    Accents
+--------------------------------------------------------------*/
+
+/* Primary Color */
+.secondary-sidebar .widget ul li>a:hover {
+  color: var(--wdtPrimaryColor);
+}
+
+
+/* -------------------------------------------------------------------------- */
+/*                              search unit test                              */
+/* -------------------------------------------------------------------------- */
+.widget .wp-block-page-list li ul,
+.widget.widget_archive ul li ul,
+.widget.widget_categories ul li ul,
+.widget.widget_nav_menu ul.menu li ul,
+.widget.widget_pages ul li ul {
+  padding-left: 5%;
+  padding-top: 0;
+}
+
+.widget .wp-block-page-list li.has-child ul {
+  padding-top: 10px;
+}
+
+.wc-block-grid__product.wc-block-grid__product {
+  border: 0;
+}
+
+#secondary.secondary-sidebar .widget.widget_block.widget_tag_cloud a {
+  color: var(--wdtAccentTxtColor);
+}
+
+.widget.widget_calendar thead th {
+  color: var(--wdtHeadAltColor);
+}
+
+/* -------------------------------------------------------------------------- 
+    Sidebar input unit test
+/* -------------------------------------------------------------------------- */
+.widget_block .has-login-form p label {
+  color: var(--wdtHeadAltColor);
+}
+
+.widget_block .has-login-form p>input[type="text"],
+.widget_block .has-login-form p>input[type="password"] {
+  color: var(--wdtHeadAltColor);
+  border-radius: var(--wdtRadius_Zero);
+  padding: var(--wdtInputPadding);
+  margin-top: 5px;
+  line-height: var(--wdtLineHeight_Alt);
+}
+
+.widget_block .has-login-form p>input[type="text"]:focus,
+.widget_block .has-login-form p>input[type="password"]:focus {
+  border-color: var(--wdtPrimaryColor);
+}
+
+.widget_block .has-login-form p>input.button:hover {
+  background: var(--wdtPrimaryColor);
+}
+
+.widget.widget_block .wp-block-loginout form>p.login-remember label input#rememberme {
+  appearance: none;
+  padding: 0;
+  width: 16px;
+  height: 16px;
+  border: 1px solid var(--wdtHeadAltColor);
+  border-radius: var(--wdtRadius_Zero);
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  margin-right: 6px;
+}
+
+.widget.widget_block .wp-block-loginout form>p.login-remember label input#rememberme:before {
+  content: '';
+  position: absolute;
+  width: 10px;
+  height: 5px;
+  top: -2px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  border: 2px solid var(--wdtHeadAltColor);
+  border-top: 0;
+  border-right: 0;
+  -webkit-transform: rotate(180deg) scale(0);
+  transform: rotate(180deg) scale(0);
+  -webkit-transition: var(--wdt-Ad-Transition);
+  transition: var(--wdt-Ad-Transition);
+  transition-duration: 0.2s;
+  opacity: 0;
+}
+
+.widget.widget_block .wp-block-loginout form>p.login-remember label input#rememberme:checked:before {
+  opacity: 1;
+  -webkit-transform: rotate(-45deg) scale(1);
+  transform: rotate(-45deg) scale(1);
+}
+
+.widget.widget_block .wp-block-loginout form .login-submit input {
+  padding: var(--wdtPadding_Btn);
+  font-family: var(--wdtFontTypo_Alt);
+  font-weight: var(--wdtFontWeight_H6);
+  color: var(--wdtHeadAltColor);
+  text-transform: uppercase;
+}
+
+.widget.widget_block .wp-block-loginout form .login-submit input:hover {
+  background-color: var(--wdtHeadAltColor);
+  color: var(--wdtAccentTxtColor);
+}
+
+
+/*--------------------------------------------------------------
+	Responsive
+--------------------------------------------------------------*/
+
+@media only screen and (min-width:1281px) and (max-width:1540px) {
+
+  .secondary-sidebar .widget #wp-calendar th {
+    font-size: 14px;
+  }
+
+  .secondary-sidebar .widget #wp-calendar td {
+    font-size: 14px;
+  }
+
+}
+
+
+@media only screen and (min-width:1025px) and (max-width:1280px) {
+
+  .secondary-sidebar aside.widget {
+    font-size: 14px;
+  }
+
+  .secondary-sidebar .widget #wp-calendar td {
+    font-size: 12px;
+  }
+
+  .secondary-sidebar .widget #wp-calendar th {
+    font-size: 12px;
+  }
+
+  .secondary-sidebar .widget_tag_cloud .tagcloud a,
+  .secondary-sidebar .widget .tagcloud a {
+    font-size: 13px !important;
+    padding: 5px 12px;
+  }
+
+  #select2-archives-dropdown--1-results,
+  #select2-cat-results {
+    font-size: 13px;
+  }
+
+}
+
+
+@media only screen and (max-width: 767px) {
+
+  .secondary-sidebar .widget #wp-calendar th,
+  .secondary-sidebar .widget #wp-calendar td {
+    font-size: 14px;
+  }
+
+}
+
+/*--------------------------------------------------------------
+        Sidebar - Default-Value
+    --------------------------------------------------------------*/
+
+@media only screen and (min-width:1281px) and (max-width:1540px) {
+  #secondary.secondary-sidebar {
+    margin-bottom: 100px;
+  }
+}
+
+@media only screen and (min-width:1025px) and (max-width:1280px) {
+  #secondary.secondary-sidebar {
+    margin-bottom: 80px;
+  }
+}
+
+@media only screen and (min-width:768px) and (max-width:1024px) {
+  #secondary.secondary-sidebar {
+    margin-bottom: 70px;
+  }
+}
+
+@media only screen and (min-width:480px) and (max-width:767px) {
+  #secondary.secondary-sidebar {
+    margin-bottom: 60px;
+  }
+}
+
+@media only screen and (max-width: 479px) {
+  #secondary.secondary-sidebar {
+    margin-bottom: 50px;
+  }
+}

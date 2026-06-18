@@ -1,0 +1,35 @@
+*** MrBlack WordPress Theme Changelog ***
+
+Version 1.0.5
+
+    * portfolio security updated
+    * Compatible with latest WordPress Version
+    * Compatible with latest WordPress Version
+
+Version 1.0.4
+
+    * Compatible: Latest WordPress Version
+    * Compatible: Latest Elementor Version
+    * Bugs updated
+
+Version 1.0.3
+
+    * Added : RTL Demo
+    * Compatible with latest Elementor Version
+    * Compatible with latest WordPress Version
+
+Version 1.0.2
+
+    * Fixed: Text Domains Warnings
+
+Version 1.0.1
+
+    * Added: Global Single Product Template feature
+    * Compatible with latest Elementor Version
+    * Compatible with latest WordPress Version
+
+Version 1.0.0
+
+    * First release!
+    * Demo content added
+    * WPML config file updated 

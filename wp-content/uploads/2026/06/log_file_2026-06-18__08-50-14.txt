@@ -1,0 +1,51 @@
+
+---Archivos descargados---
+Los archivos de importación para Default Demo ¡han sido descargados correctamente!
+Tiempo de ejecución máximo inicial = 120
+Información de archivos:
+URL del sitio = http://localhost/wordpress
+Archivo de datos = C:\xampp\htdocs\wordpress/wp-content/uploads/2026/06/demo-content-import-file_2026-06-18__08-50-14.xml
+Archivo de widget = C:\xampp\htdocs\wordpress/wp-content/uploads/2026/06/demo-widgets-import-file_2026-06-18__08-50-14.json
+Archivo del personalizador = C:\xampp\htdocs\wordpress/wp-content/uploads/2026/06/demo-customizer-import-file_2026-06-18__08-50-14.dat
+Archivos de Redux:
+ ¡no definido!
+
+---ocdi/before_content_import---
+
+
+------
+¡Nueva llamada AJAX!
+
+
+---Importando los widgets---
+Standard Sidebar : 
+
+Comentarios recientes - Recent Comments - Importado
+Archivos - Archives - Importado
+Categorías - Categories - Importado
+Buscar - Sin título - Importado
+Entradas recientes - Recent Posts - Importado
+
+wdt-cw-blogsidebar : 
+
+Buscar - Sin título - Importado
+MrBlack Posts - Recent Posts: - Importado
+Galería - Gallery: - Importado
+Nube de etiquetas - Tags: - Importado
+Imagen - Sin título - Importado
+
+wdt-cw-shop-sidebar : 
+
+Búsqueda de productos - Sin título - Importado
+Categorías - Categories : - Importado
+Nube de etiquetas de productos - Tags - Importado
+Filtrar productos por precio - Filter by price - Importado
+Imagen - Sin título - Importado
+
+
+
+---Importación de los ajustes del personalizador---
+¡Importación de los ajustes del personalizador finalizado!
+
+---ocdi/after_import---
+
